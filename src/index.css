@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #316342;
+  --color-primary-container: #4a7c59;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e1ffe5;
+  --color-primary-fixed: #b9efc5;
+  --color-primary-fixed-dim: #9dd3aa;
+  
+  --color-secondary: #0062a0;
+  --color-secondary-container: #66b3fd;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #004472;
+  --color-secondary-fixed: #d0e4ff;
+  --color-secondary-fixed-dim: #9bcaff;
+  
+  --color-tertiary: #874a00;
+  --color-tertiary-container: #a8600e;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fff6f2;
+  --color-tertiary-fixed: #ffdcc1;
+  --color-tertiary-fixed-dim: #ffb779;
+  
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #d8dae3;
+  --color-surface-variant: #e0e2eb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f3fd;
+  --color-surface-container: #ecedf7;
+  --color-surface-container-high: #e6e8f1;
+  --color-surface-container-highest: #e0e2eb;
+  
+  --color-on-surface: #191c22;
+  --color-on-surface-variant: #414942;
+  --color-outline: #717971;
+  --color-outline-variant: #c1c9bf;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+
+  --font-headline-xl: "Epilogue", sans-serif;
+  --font-headline-lg: "Epilogue", sans-serif;
+  --font-headline-md: "Epilogue", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-engraved: "JetBrains Mono", monospace;
+  --font-label-gauge-readout: "JetBrains Mono", monospace;
+  --font-label-gauge-num: "JetBrains Mono", monospace;
+  
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4rem;
+}
+
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f9f9ff;
+    color: #191c22;
+  }
+}
+
+.font-label-engraved {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
+.font-label-gauge-readout {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.04em;
+}
+
+.font-label-gauge-num {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Custom scrollbar and subtle horological brass glow */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ecedf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c9bf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #717971;
+}

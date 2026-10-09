@@ -1,0 +1,6 @@
+{
+  "name": "NourishDial - Precision Horology Nutrition",
+  "description": "Precision nutrition and hydration horological ledger with kinetic energy meter, analog gauges, borosilicate hydration cylinder, and AI optical food scanner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
